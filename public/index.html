@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edunnforce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edunnforce Crypto</h1>
+        <div class="creditos">Desenvolvido por Edunn</div>
+        
+        <div class="controles">
+            <div class="grupo-input">
+                <label for="qtdPalavras">Quantidade de Palavras:</label>
+                <select id="qtdPalavras">
+                    <option value="12">12 palavras</option>
+                    <option value="15">15 palavras</option>
+                    <option value="18">18 palavras</option>
+                    <option value="21">21 palavras</option>
+                    <option value="24">24 palavras</option>
+                </select>
+            </div>
+            <button id="btnIniciar" class="btn-primario">Iniciar</button>
+            <button id="btnParar" class="btn-primario" disabled>Parar</button>
+        </div>
+
+        <div class="estatisticas">
+            <div class="item-estatistica">
+                <span>Tentativas:</span>
+                <span id="tentativas">0</span>
+            </div>
+            <div class="item-estatistica">
+                <span>Total Encontrado:</span>
+                <span id="valorTotal">$0.00</span>
+            </div>
+        </div>
+
+        <div class="container-log">
+            <h2>Log de Geração</h2>
+            <div id="areaLog" class="area-log"></div>
+        </div>
+
+        <div class="resultados">
+            <h2>Carteiras Encontradas</h2>
+            <div id="listaCarteiras" class="lista-carteiras"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
